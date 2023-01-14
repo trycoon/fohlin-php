@@ -13,11 +13,14 @@
 
 7. Tryck "CTRL-C" i konsollen för att stänga ner Docker containrarna, all data kommer dock ligga kvar.
 
+Använd `wipe` kommandot för att rensa bort databas och containrar för att börja om på nytt (filerna som du skapat i ditt projekt ligger dock kvar)
+
+MySQL kan nås på port 3307 (för att inte krocka med ev. befintliga databasserver på hosten)
 
 
 Ytterligare info:
 
-- [Om Adminer är aktiverad i docker-compose] Surfa till http://localhost:8082, ange <din dators IP-adress:3306> i "Server"-fältet, "root" i "Användarnamn"-fältet och "admin" i "Lösenord"-fältet, logga sedan in för att administrera och verifiera att MySQL fungerar korrekt.
+- [Om Adminer är aktiverad i docker-compose] Surfa till http://localhost:8082, ange <din dators IP-adress:3307> i "Server"-fältet, "root" i "Användarnamn"-fältet och "admin" i "Lösenord"-fältet, logga sedan in för att administrera och verifiera att MySQL fungerar korrekt.
 
 - För att ansluta via termial till MySQL databas:
 

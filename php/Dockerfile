@@ -18,5 +18,3 @@ xdebug \
 pdo_mysql \
 && rm -rf /var/lib/apt/lists/*
 COPY php/php.ini /usr/local/etc/php/
-COPY html/* /var/www/html/
-RUN mkdir -p /var/www/logs

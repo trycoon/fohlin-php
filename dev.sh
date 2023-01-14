@@ -10,6 +10,8 @@ start() {
     fi
 
     mkdir -p ${project_dir}
+    mkdir -p ${project_dir}/logs
+    cp -r html ${project_dir}
 
     echo "Starting project in directory '${project_dir}'. Stop with 'CTRL-C'."
 
